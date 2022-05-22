@@ -3,9 +3,9 @@ let indexWord = 0;
 
 // INSERT
 document.getElementById("insertWord_input").addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    addWord();
-  }
+	if (event.key === "Enter") {
+	addWord();
+	}
 });
 
 function addWord() {
@@ -16,9 +16,9 @@ function addWord() {
 
 // SEARCH
 document.getElementById("searchWord_input").addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    searchWord();
-  }
+	if (event.key === "Enter") {
+	searchWord();
+	}
 });
 
 function searchWord() {
