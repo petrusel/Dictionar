@@ -17,8 +17,8 @@
   </head>
 
   <body>
-
-  <div class="card text-center" style="width: 80rem; margin:0 auto;">
+	  
+  	<div class="card text-center" style="width: 80rem; margin:0 auto;">
 		<div class="card-header">
 		    <h1 class="card-title">Dictionar</h1>
 		</div>
@@ -43,45 +43,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
-    <script>	
-
-		const dictionar = [];
-		var indexWord = 0;
-
-		// INSERT
-		var inputInsert = document.getElementById("in_insertWord");
-		inputInsert.addEventListener("keypress", function(event) {
-		  if (event.key === "Enter") {
-		    event.preventDefault();
-		    document.getElementById("btn_insertBtn").click();
-		  }
-		});
-
-		function addWord() {
-			dictionar[indexWord] = document.getElementById("in_insertWord").value;
-			document.getElementById("status").innerHTML = "Cuvantul '" + dictionar[indexWord] + "' a fost inserat.";
-			++indexWord;
-		}
-
-		// SEARCH
-		var inputInsert = document.getElementById("in_searchWord");
-			inputInsert.addEventListener("keypress", function(event) {
-			  if (event.key === "Enter") {
-			    event.preventDefault();
-			    document.getElementById("btn_searchBtn").click();
-			  }
-			});
-
-		function schWord() {
-			const word = document.getElementById("in_searchWord").value;
-			if (dictionar.includes(word)) {
-				document.getElementById("status").innerHTML = "Cuvantul '" + word + "' a fost gasit in lista.";
-			} else {
-				document.getElementById("status").innerHTML = "Cuvantul '" + word + "' nu exista in lista.";
-			}
-		}
-
-    </script>
-
+    <script type="text/javascript" src="dictionarScript.js"></script>
+	  
   </body>
 </html>
